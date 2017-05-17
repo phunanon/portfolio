@@ -26,7 +26,9 @@ h1, h2 { margin: 1rem; }
 h1 { font-size: 2rem; }
 h2 { font-size: 1.5rem; }
 a { cursor: pointer; color: rgba(200, 200, 255, 1); }
-p { margin: .5rem; }
+p {
+    line-height: 1.6rem;
+}
 
 pre { font-family: 'Roboto Mono'; }
 
@@ -53,19 +55,21 @@ portfolio {
 
 article {
     display: inline-block;
-    max-width: 31rem;
-    margin: 2rem;
-    padding: 1rem;
+    max-width: 32rem;
+    min-height: 23rem;
+    margin: 1rem;
+    padding: 0 1rem 1rem 1rem;
     vertical-align: top;
-    border-left: .32rem solid #000;
+    border-left: .5rem solid #000;
     background-color: rgba(64, 64, 64, .8);
     box-shadow: .2rem .2rem .1rem rgba(0, 0, 0, .2);
     color: #eee;
 }
 half {
     display: inline-block;
-    width: 49%;
+    width: 46%;
     vertical-align: top;
+    padding: .5rem;
 }
 
 article iframe, article img {
@@ -76,6 +80,9 @@ article iframe, article img {
 }
 article iframe {
     width: 100%;
+}
+article h2 {
+    text-align: center;
 }
 /*article img:hover {
     height: unset;
@@ -89,11 +96,19 @@ article h2 .fa {
 }
 article h2 .fa:hover { color: rgba(200, 200, 255, 1); }
 
+article.arduino { border-left: .5rem solid rgb(48, 156, 164); }
+article.SFML { border-left: .5rem solid rgb(32, 164, 32); }
+article.terminal {  }
+article.HTML { border-left: .5rem solid rgb(195, 127, 0); }
+
 
 @media screen and (max-width: 60rem) {
     body {
         padding: 1rem 5vw;
         background-color: #eee;
+    }
+    article {
+        margin: .5rem 0rem;
     }
     half {
         display: block;
