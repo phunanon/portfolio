@@ -1,0 +1,142 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    margin: 0; padding: 0;
+    text-shadow: .1rem .1rem .1rem rgba(64, 64, 64, .2);
+    transition: 1s all ease-in-out;
+    cursor: default;
+}
+
+@font-face {
+    font-family: 'fa';
+    src: url(fontawesome-webfont.woff2);
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    padding: 2rem;
+    background-image: url('img/bg.jpg');
+    transition: .1s all ease-in-out;
+}
+
+h1, h2 { margin: 1rem; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+a { cursor: pointer; color: rgba(200, 200, 255, 1); }
+p { margin: .5rem; }
+
+pre { font-family: 'Roboto Mono'; }
+
+img.logo {
+    border-radius: 50%;
+}
+
+header {
+    text-align: center;
+}
+header .logo {
+    width: 8rem;
+    box-shadow: .2rem .2rem .1rem rgba(0, 0, 0, .2);
+}
+header .logo:hover {
+    width: 16rem;
+}
+
+portfolio {
+    /*max-width: 69rem;
+    margin: auto;*/
+    display: block;
+}
+
+article {
+    display: inline-block;
+    max-width: 31rem;
+    margin: 2rem;
+    padding: 1rem;
+    vertical-align: top;
+    border-left: .32rem solid #000;
+    background-color: rgba(64, 64, 64, .8);
+    box-shadow: .2rem .2rem .1rem rgba(0, 0, 0, .2);
+    color: #eee;
+}
+half {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+article iframe, article img {
+    border: 1px solid black;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+article iframe {
+    width: 100%;
+}
+/*article img:hover {
+    height: unset;
+    width: 100%;
+}*/
+article h2 .fa {
+    float: right;
+    padding: 0;
+    color: rgba(255, 255, 255, .2);
+    font-weight: normal;
+}
+article h2 .fa:hover { color: rgba(200, 200, 255, 1); }
+
+
+@media screen and (max-width: 60rem) {
+    body {
+        padding: 1rem 5vw;
+        background-color: #eee;
+    }
+    half {
+        display: block;
+        width: 100%;
+    }
+    article iframe, article img {
+        border: 1px solid black;
+        height: 10rem;
+        max-width: 20rem;
+    }
+}
+
+
+
+
+/*Font Awesome font styles*/
+.fa {
+    font-family: 'fa';
+    text-decoration: none;
+    font-size: 2rem;
+    color: rgba(64, 64, 64, .8);
+    padding: .5rem;
+    text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
+    transition: none;
+}
+.fa:hover {
+    color: rgba(64, 64, 128, .6);
+}
+.fa.email:before {
+  content: '\f0e0';
+}
+.fa.twitter:before {
+  content: '\f099';
+}
+.fa.youtube:before {
+  content: '\f16a';
+}
+.fa.telegram:before {
+  content: '\f2c6';
+}
+.fa.github:before {
+  content: '\f113';
+}
+.fa.github2:before {
+  content: "\f1d3";
+}
