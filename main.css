@@ -78,9 +78,10 @@ half iframe, half img {
 article iframe, article img {
     border: 1px solid black;
     width: 100%;
-    margin: auto;
+    margin: 1rem auto 0rem auto;
     display: block;
     min-height: 16rem;
+    border-radius: 1rem;
 }
 article iframe {
     width: 100%;
@@ -95,7 +96,7 @@ article h2 {
 article h2 .fa {
     float: right;
     padding: 0;
-    color: rgba(255, 255, 255, .2);
+    color: rgba(255, 255, 255, .32);
     font-weight: normal;
 }
 article h2 .fa:hover { color: rgba(200, 200, 255, 1); }
