@@ -51,6 +51,7 @@ portfolio {
     /*max-width: 69rem;
     margin: auto;*/
     display: block;
+    text-align: center;
 }
 
 article {
