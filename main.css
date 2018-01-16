@@ -89,6 +89,10 @@ article img {
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-height: 20rem;
+}
+article img.fit {
+    object-fit: contain;
 }
 article iframe {
     width: 100%;
