@@ -53,7 +53,7 @@ header p {
     padding: .5rem;
 }
 charms .fa {
-    padding: 0rem .5rem;
+    padding: 0rem .4rem;
 }
 
 portfolio {
@@ -162,21 +162,11 @@ article.HTML { border-left: .5rem solid rgb(195, 127, 0); }
 .fa:hover {
     color: rgba(64, 64, 128, .6);
 }
-.fa.email:before {
-  content: '\f0e0';
-}
-.fa.twitter:before {
-  content: '\f099';
-}
-.fa.youtube:before {
-  content: '\f16a';
-}
-.fa.telegram:before {
-  content: '\f2c6';
-}
-.fa.github:before {
-  content: '\f113';
-}
-.fa.github2:before {
-  content: "\f1d3";
-}
+.fa.email:before { content: '\f0e0'; }
+.fa.twitter:before { content: '\f099'; }
+.fa.youtube:before { content: '\f16a'; }
+.fa.telegram:before { content: '\f2c6'; }
+.fa.github:before { content: '\f113'; }
+.fa.github2:before { content: "\f1d3"; }
+.fa.linkedin:before { content: "\f08c"; }
+.fa.cv:before { content: "\f2c2"; }
