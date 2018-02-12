@@ -30,9 +30,8 @@ p {
 
 pre { font-family: 'Roboto Mono'; }
 
-img.logo {
+img.pp {
     border-radius: 50%;
-    transition: .5s all ease-in-out;
 }
 
 header {
@@ -42,12 +41,9 @@ header * {
     display: inline-block;
     vertical-align: middle;
 }
-header .logo {
+header .pp {
     width: 8rem;
     box-shadow: .2rem .2rem .1rem rgba(0, 0, 0, .2);
-}
-header .logo:hover {
-    width: 16rem;
 }
 header p {
     padding: .5rem;
@@ -157,7 +153,6 @@ article.HTML { border-left: .5rem solid rgb(195, 127, 0); }
     color: rgba(64, 64, 64, .8);
     padding: .5rem;
     text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
-    transition: none;
 }
 .fa:hover {
     color: rgba(64, 64, 128, .6);
