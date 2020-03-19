@@ -1,14 +1,19 @@
+@font-face {
+    font-family: "fa";
+    src: url(fontawesome-webfont.woff2);
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url(open-sans.woff2);
+}
+
 * {
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     margin: 0; padding: 0;
-    text-shadow: .1rem .1rem .1rem rgba(64, 64, 64, .2);
+    /*text-shadow: .1rem .1rem .1rem rgba(64, 64, 64, .2);*/
     cursor: default;
-}
-
-@font-face {
-    font-family: 'fa';
-    src: url(fontawesome-webfont.woff2);
 }
 
 body {
@@ -20,11 +25,14 @@ h1 {
     margin: 1rem;
     font-size: 2rem;
 }
-h2 {
+h2, h2 * {
     margin-bottom: 1rem;
     font-size: 1.5rem;
 }
-a, a img { cursor: pointer; color: rgba(200, 200, 255, 1); }
+a, a img {
+  cursor: pointer;
+  color: #00f;
+}
 p {
     line-height: 1.6rem;
 }
@@ -89,13 +97,14 @@ article {
     padding: 1rem;
     vertical-align: top;
     text-align: left;
-    background-color: rgba(64, 64, 64, .8);
+    background-color: #fff;
+    /*background-color: rgba(64, 64, 64, .8);
+    color: #eee;*/
     box-shadow: .2rem .2rem .1rem rgba(0, 0, 0, .2);
-    color: #eee;
 }
 half {
     display: inline-block;
-    width: 48%;
+    width: 47%;
     vertical-align: top;
     padding: 0 .5rem 0 0;
 }
@@ -111,6 +120,9 @@ article iframe {
     min-height: 16rem;
     width: 100%;
 }
+article img {
+  border: .1rem solid #000;
+}
 article img.fit {
     object-fit: contain;
 }
@@ -118,24 +130,27 @@ article img.cover {
     object-fit: cover;
     object-position: 0 0;
 }
-article h2 {
-    text-align: center;
-}
 
 article h2 .fa {
     float: right;
     padding: 0;
-    color: rgba(255, 255, 255, .32);
     font-weight: normal;
 }
-article h2 .fa:hover { color: rgba(200, 200, 255, 1); }
 
 article.android  { border-left: .5rem solid rgba(48, 48, 195); }
 article.arduino  { border-left: .5rem solid rgb(48, 156, 164); }
-article.SFML     { border-left: .5rem solid rgb(32, 164, 32); }
+article.SFML     { border-left: .5rem solid #ee0; }
 article.terminal { border-left: .5rem solid #000; }
 article.HTML     { border-left: .5rem solid rgb(195, 127, 0); }
+article.Csharp   { border-left: .5rem solid #0c0; }
 
+contributions p {
+  display: inline-block;
+  padding: .5rem;
+  background-color: #fffa;
+  border: .1rem solid #000;
+  margin: .5rem;
+}
 
 @media screen and (max-width: 60rem) {
     body {
@@ -163,12 +178,12 @@ article.HTML     { border-left: .5rem solid rgb(195, 127, 0); }
     font-family: 'fa';
     text-decoration: none;
     font-size: 2rem;
-    color: rgba(64, 64, 64, .8);
+    color: #000a;
     padding: .5rem;
     text-shadow: .1rem .1rem .1rem rgba(0, 0, 0, .2);
 }
 .fa:hover {
-    color: rgba(64, 64, 128, .6);
+    color: #000;
 }
 .fa.email:before { content: '\f0e0'; }
 .fa.twitter:before { content: '\f099'; }
