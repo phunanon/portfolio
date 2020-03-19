@@ -185,6 +185,10 @@ contributions p {
 .fa:hover {
     color: #000;
 }
+.fa span {
+  padding-left: .5rem;
+  cursor: pointer;
+}
 .fa.email:before { content: '\f0e0'; }
 .fa.twitter:before { content: '\f099'; }
 .fa.youtube:before { content: '\f16a'; }
